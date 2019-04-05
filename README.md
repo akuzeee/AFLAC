@@ -11,11 +11,11 @@
  
 
 ## Implementation
-- `$ run.sh`
+- `$ ./run.sh`
   - The MNISTR dataset will be automatically downloaded under `~/.torch/datasets/` by running the script.
 - Then you can make a score table in ./analyze_results.ipynb
   
 
 ## References
-- Ghifary, M., Bastiaan Kleijn, W., Zhang, M., Balduzzi, D.: Domain generaliza- tion for object recognition with multi-task autoencoders. In: Proc. of the IEEE International Conference on Computer Vision (ICCV) (2015)
+- Ghifary, M., Bastiaan Kleijn, W., Zhang, M., Balduzzi, D.: Domain generalization for object recognition with multi-task autoencoders. In: Proc. of the IEEE International Conference on Computer Vision (ICCV) (2015)
   - We borrow the dataset from their repository https://github.com/ghif/mtae

@@ -224,24 +224,14 @@ def get_biased_mnistr(bias):
 
 
 if __name__ == '__main__':
-    dataset = MNISTR(domain_keys=['0', '30', '60'])
-    dataset = MNISTR(domain_keys='0,15,30')
-    dataset = MNISTR(domain_keys=MNISTR.get_disjoint_domains(['0', '30', '60']))
-    print(len(np.where(dataset.datasets[0].y < 5)[0]))
-    print(len(np.where(dataset.datasets[0].y >= 5)[0]))
-
-    dataset = BiasedMNISTR(domain_keys=['15', '30', '45'])
-    print(len(np.where(dataset.datasets[0].y < 5)[0]))
-    print(len(np.where(dataset.datasets[0].y >= 5)[0]))
-
-    UnnaturalMNISTR = get_biased_mnistr(
+    MNISTRClass = get_biased_mnistr(
         {'0' : 1,
         '15': 0.85,
         '30': 0.7,
         '45': 0.55,
         '60': 1,
         '75': 0.25})
-    dataset = UnnaturalMNISTR(domain_keys=['60', '75'])
+    dataset = MNISTRClass(domain_keys=['60', '75'])
     print(len(np.where(dataset.datasets[0].y < 5)[0]))
     print(len(np.where(dataset.datasets[0].y >= 5)[0]))
     print(len(np.where(dataset.datasets[1].y < 5)[0]))

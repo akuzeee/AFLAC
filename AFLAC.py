@@ -133,7 +133,7 @@ def train(writer, train_dataset, valid_dataset, test_dataset, model, batch_size,
     best_valid_acc = 0.
     final_test_acc = 0.
     acc_invariant_curve = {}
-    dataset_name_and_test_key = dataset_name + '_' + 'wisdm'
+    dataset_name_and_test_key = dataset_name + '_' + str(test_dataset.domain_keys[0])
 
     y_optimizer = optim.RMSprop(list(learner.E.parameters()) + list(learner.M.parameters()), lr=lr, weight_decay=weight_decay)
     d_optimizer = optim.RMSprop(learner.D.parameters(), lr=lr)
