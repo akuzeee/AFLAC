@@ -11,8 +11,9 @@
  
 
 ## Implementation
-- `$ ./run.sh`
+- `$ python dataset.py`
   - The MNISTR dataset will be automatically downloaded under `~/.torch/datasets/` by running the script.
+- `$ ./run.sh`
 - Then you can make a score table in ./analyze_results.ipynb
   
 
