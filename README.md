@@ -1,5 +1,8 @@
 # Experiments for *Adversarial Invariant Feature Learning under Accuracy Constraint for Domain Generalization*
 
+## Paper Info
+- [arxiv](https://arxiv.org/abs/1904.12543)
+
 
 ## Requirements
 - python 2.7
