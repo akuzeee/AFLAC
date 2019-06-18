@@ -2,6 +2,7 @@
 
 ## Paper Info
 - [arxiv](https://arxiv.org/abs/1904.12543)
+- supplementary: `./docs/supplementary.pdf`
 
 
 ## Requirements
@@ -20,9 +21,7 @@
 - Then you can make a score table in ./analyze_results.ipynb
 
 
-## Fig.3-(a) (legend added)
-![Fig3-a](https://user-images.githubusercontent.com/24582005/56874776-28393100-6a77-11e9-8c92-5d0e2881f2ca.png)
-
 ## References
 - Ghifary, M., Bastiaan Kleijn, W., Zhang, M., Balduzzi, D.: Domain generalization for object recognition with multi-task autoencoders. In: Proc. of the IEEE International Conference on Computer Vision (ICCV) (2015)
   - We borrow the dataset from their repository https://github.com/ghif/mtae
+
